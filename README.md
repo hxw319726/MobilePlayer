@@ -7,5 +7,10 @@
 3. 监听RedioGroup的状态
 4. 屏蔽各个页面重复初始化数据
 
-    ![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/8R39331_7LFKG%7DNLXQ68%25P8.png)
+    ![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/1.png)
+    ![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/2.png)
+5. 软件架构图
 
+    ![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/3.png)
+
+6. 自定义试图view
