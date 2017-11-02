@@ -7,5 +7,5 @@
 3. 监听RedioGroup的状态
 4. 屏蔽各个页面重复初始化数据
 
-    ![image](screenshot/8R39331_7LFKG}NLXQ68%P8.png)
+    ![image](https://github.com/hxw319726/MobilePlayer/tree/master/screenshot/8R39331_7LFKG}NLXQ68%P8.png)
 
