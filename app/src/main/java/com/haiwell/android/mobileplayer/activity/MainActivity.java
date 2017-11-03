@@ -1,6 +1,8 @@
 package com.haiwell.android.mobileplayer.activity;
 
 import android.app.Activity;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
@@ -23,6 +25,7 @@ import com.haiwell.android.mobileplayer.pagers.NetVideoPager;
 import com.haiwell.android.mobileplayer.pagers.VideoPager;
 
 import java.util.ArrayList;
+import java.util.jar.Manifest;
 
 /**
  * Created by Administrator on 2017/10/22.
@@ -59,11 +62,24 @@ public class MainActivity extends FragmentActivity {
         rgBottomTag.check(R.id.rb_video);//设置默认项
     }
 
+    public static boolean isGrantExternalRW(Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && activity.checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+            activity.requestPermissions(new String[]{
+                 android.Manifest.permission.READ_EXTERNAL_STORAGE,
+                 android.Manifest.permission.WRITE_EXTERNAL_STORAGE
+
+            },1);
+            return false;
+        }
+        return true;
+    }
+
     class MyOnCheckedChangeListener implements RadioGroup.OnCheckedChangeListener {
         @Override
         public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
             switch (i) {
                 case R.id.rb_video:
+                    isGrantExternalRW(MainActivity.this);
                     position = 0;
                     break;
                 case R.id.rb_audio:

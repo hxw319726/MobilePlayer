@@ -13,4 +13,13 @@
 
     ![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/3.png)
 
-6. 自定义试图view
+6. 自定义视图view
+- 自定义一个类来实现视图类
+- ![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/4.png)
+- ![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/5.png)
+
+7. 本地视频列表
+
+- ![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/6.png)
+- android6.0以上要动态获取权限
+![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/6.png)
