@@ -22,4 +22,5 @@
 
 - ![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/6.png)
 - android6.0以上要动态获取权限
-![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/6.png)
+
+![image](https://github.com/hxw319726/MobilePlayer/blob/master/screenshot/7.png)
